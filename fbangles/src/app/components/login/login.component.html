@@ -1,3 +1,50 @@
 <div class="login-container">
-    
+  <header class="login__header">
+    <div class="login__header__left">
+      <img src="../../../assets/fblogo.svg" alt="" />
+      <h2>Facebook is kinda ok I guess</h2>
+    </div>
+    <div class="login__header__right">
+      <mat-card class="login__header__right__card">
+        <mat-card-content>
+          <form #form="ngForm" class="login-form" (ngSubmit)="login(form)">
+            <input
+              type="text"
+              name="email"
+              ngModule
+              placeholder="Email pls"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              ngModule
+              placeholder="pwd bby ;)"
+              required
+            />
+            <button
+              type="submit"
+              class="login-button"
+              [disabled]="form.invalid || form.pending"
+            ></button>
+          </form>
+
+          <a href="#">Forget acct tho??</a>
+          <button class="create-account" (click)="(openRegister)">
+            Create new lifezucc :)
+          </button>
+        </mat-card-content>
+      </mat-card>
+
+      <p class="tagline">
+        Create a page for your worst enemy and make fun of them (but nicely ok)
+      </p>
+    </div>
+  </header>
+  <footer>
+    <p>yahhhhhhh fb nonsense heck yeah</p>
+    <p>Links</p>
+    <p>LINKY LINKS</p>
+    <p>Be nice to me :)</p>
+  </footer>
 </div>
