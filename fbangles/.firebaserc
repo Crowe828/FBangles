@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fbangles001": {
+      "hosting": {
+        "fbangles": [
+          "fbangles001"
+        ]
+      }
+    }
+  }
+}
