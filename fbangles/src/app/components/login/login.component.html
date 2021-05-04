@@ -2,7 +2,7 @@
   <header class="login__header">
     <div class="login__header__left">
       <img src="../../../assets/fblogo.png" alt="" />
-      <h2>Facebook is kinda ok I guess</h2>
+      <h2>Facebook is kinda ok I guess.</h2>
     </div>
     <div class="login__header__right">
       <mat-card class="login__header__right__card">
@@ -11,40 +11,37 @@
             <input
               type="text"
               name="email"
-              ngModule
+              ngModel
               placeholder="Email pls"
               required
             />
             <input
               type="password"
               name="password"
-              ngModule
-              placeholder="pwd bby ;)"
+              ngModel
+              placeholder="Password pls"
               required
             />
             <button
               type="submit"
               class="login-button"
               [disabled]="form.invalid || form.pending"
-            ></button>
+            >
+              Login
+            </button>
           </form>
 
-          <a href="#">Forget acct tho??</a>
+          <a href="#">Forgotten your account, have you?</a>
           <button class="create-account" (click)="(openRegister)">
             Create new lifezucc :)
           </button>
         </mat-card-content>
       </mat-card>
 
-      <p class="tagline">
-        Create a page for your worst enemy and make fun of them (but nicely ok)
-      </p>
+      <p class="tagline"><strong>Create a dank meme page.</strong> or... something else?</p>
     </div>
   </header>
-  <footer>
-    <p>yahhhhhhh fb nonsense heck yeah</p>
-    <p>Links</p>
-    <p>LINKY LINKS</p>
-    <p>Be nice to me :)</p>
+  <footer class="login__footer">
+    <p>These are where the links would go... IF I HAD ANY.</p>
   </footer>
 </div>

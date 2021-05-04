@@ -1,5 +1,5 @@
 .login-container {
-  background-color: #F0F2F5;
+  background-color: #f0f2f5;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -17,52 +17,108 @@
 }
 
 .login__header__left {
-    width: 580px;
-    padding-right: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
+  width: 580px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 img {
-    height: 56px;
-    margin-right: 32px;
-    margin-bottom: 20px;
-    
+  height: 56px;
+  margin-right: 32px;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-    width: 500px;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
 }
 
 .login__header__right__card {
-    height: 380px;
-    width: 400px;
-    padding: 10px;
-    border-radius: 10px; 
-    margin-bottom: 30px;
+  height: 380px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: white;
 }
 
 .login__header__right__card__content {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;   
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
-    padding: 20px;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    
+  padding: 20px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.login-button {
+  background-color: #1877f2;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #1877f2;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.create-account {
+  background-color: #42b72a;
+  display: inline-block;
+  align-self: center;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tagline {
+  text-align: center;
+  letter-spacing: 0.7px;
+}
+
+.login__footer {
+  height: 30vh;
+  align-self: flex-end;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
